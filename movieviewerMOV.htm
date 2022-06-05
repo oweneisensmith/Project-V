@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Sonic Foundry VideoFactory 2.0">
+<title>$$Title$$</title>
+<script language="Javascript">
+<!-- hide from pre-script browsers
+     var haveqt = false;
+//-->
+</script>
+
+<script language="VBScript">
+<!-- hide from pre-script browsers
+On Error Resume Next
+Set theObject = CreateObject("QuickTimeCheckObject.QuickTimeCheck.1")
+On Error goto 0
+
+If IsObject(theObject) Then
+     If theObject.IsQuickTimeAvailable(0) Then 'Just check for file
+          haveqt = true
+     End If
+End If
+//-->
+</script>
+
+<script language="Javascript">
+<!-- hide from pre-script browsers
+     if (navigator.plugins) {
+          for (i=0; i < navigator.plugins.length; i++ ) {
+               if (navigator.plugins[i].name.indexOf("QuickTime") >= 0)
+                    { haveqt = true; }
+            }
+        }
+//-->
+</script>
+</head>
+
+<!-- Change background and text color here -->
+<body bgcolor="white" text="black">
+
+<!-- TITLE -->
+<H1>$$Title$$</H1>
+
+<!-- COPYRIGHT -->
+<p>$$Copyright$$</p>
+
+<script language="Javascript">
+<!-- hide from pre-script browsers
+    if (!haveqt)
+//    {document.write('<font face="Arial" size="2">QuickTime format</font>');}
+//    else
+    {document.write('<font face="Arial" size="2">You do not seem to have QuickTime. If the Windows Media Player appears, there is a problem with your browser.</font>');}
+//-->
+</script>
+
+<noscript>
+Your browser doesn't support scripting, so you can't check for QuickTime.
+</noscript>
+
+<!-- BEGIN TABLE -->
+<!-- Adjust table border and spacing here.  To remove border, set: border="0" -->
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+	<!-- MOVIE -->
+	<td ALIGN="CENTER" VALIGN="MIDDLE" BGCOLOR="black">
+	<EMBED SRC ="$$MovieFile$$" 
+		PLUGINSPAGE="http://www.apple.com/quicktime/download" 
+		width="$$Width$$" 
+		height="$$Height$$" 
+		CONTROLLER="true" 
+		LOOP="false" 
+		AUTOPLAY="true" 
+		cache="true" 
+		BGCOLOR="black">
+	</td>
+</tr>
+<tr>
+	<!-- ARTIST -->
+	<td><p><font face="Arial" size="2">$$Artist$$</font></p>
+	</td>
+</tr>
+<tr>
+	<!-- ENGINEER -->
+	<td><p><font face="Arial" size="2">$$Engineer$$</font></p>
+	</td>
+</tr>
+<tr>
+	<!-- COMMENTS -->
+	<td><p><font face="Arial" size="2">$$Comments$$</font></p>
+	</td>
+</tr>
+<tr>
+	<td ALIGN="CENTER" BGCOLOR="BLACK"><p><a href="http://www.sonicfoundry.com"><img src="http://stats.sonicfoundry.com/videofactory/sf_logo.jpg" border="0"></a></p>
+	</td>
+</tr>
+</table>
+<!-- END TABLE -->
+<p><font face="Arial" size="2">Can't view the clip? Download the QuickTime plug-in from <a href=http://www.apple.com/quicktime/download>www.apple.com/quicktime/download</a></font>
+</body>
+</html>
